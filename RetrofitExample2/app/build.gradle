@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'online.fakedevelopers.retrofitexample'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "online.fakedevelopers.retrofitexample"
+        minSdk 22
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+// Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // Converter for JSON (Gson converter is commonly used)
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // OkHttp for logging (optional, but recommended for debugging)
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    // FOR LOADING IMAGES IN TABLE ADDEDDEPENDENCIES
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}
