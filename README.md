@@ -112,19 +112,6 @@ git clone https://github.com/123-anubhav/android-native-learning-practice.git
 
 ---
 
-## **Screenshots & Previews**
-
-Here are some screenshots of the apps:
-
-- **AnyWebsiteApp**
-  ![AnyWebsiteApp Screenshot](screenshots/anywebsiteapp.png)
-
-- **AppNavigation**
-  ![AppNavigation Screenshot](screenshots/appnavigation.png)
-
-- **EcommerceApp**
-  ![EcommerceApp Screenshot](screenshots/ecommerceapp.png)
-
 Feel free to explore all the apps in the repository to see how various Android concepts are implemented.
 
 ---
